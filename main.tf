@@ -18,6 +18,7 @@ terraform {
 
 module "vm" {
   source  = "app.terraform.io/calyptia/vm/gcp"
-  version = "1.3.0"
+  version = "1.4.1"
+  machine_type = var.machine_type
   gcp_credentials = var.gcp_credentials
 }
